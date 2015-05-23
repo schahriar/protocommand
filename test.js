@@ -37,7 +37,7 @@ describe('Test Suite', function(){
             expect(pcmd.params(makeBufferFrom("GOODC GOODP1 GOODP2"))).to.deep.equal(['GOODP1', 'GOODP2']);
         })
         it('should parse based on next char', function(){
-            pcmd.next = '|';
+            pcmd.delimiter = '|';
             expect(pcmd.params(makeBufferFrom("GOODC|GOODP1|GOODP2"))).to.deep.equal(['GOODP1', 'GOODP2']);
         })
         it('should not parse incorrect parameters', function(){
@@ -62,7 +62,7 @@ describe('Test Suite', function(){
             }
         })
         it('should run 50000 good tests in time', function(){
-            pcmd.next = ' ';
+            pcmd.delimiter = ' ';
             for(i=0; i<=50000; i++){
                 if(pcmd.get(makeBufferFrom('RUND RANDOM XYZ')) !== 'RUND') throw 'WAAA';
             }
