@@ -1,0 +1,29 @@
+{
+  "name": "protocommand",
+  "version": "1.0.0",
+  "description": "A NodeJS module for parsing protocol commands from a Buffer.",
+  "main": "protocommand.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schahriar/protocommand.git"
+  },
+  "keywords": [
+    "protocol",
+    "commands",
+    "protocommand",
+    "command",
+    "parsing"
+  ],
+  "author": "Schahriar SaffarShargh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schahriar/protocommand/issues"
+  },
+  "homepage": "https://github.com/schahriar/protocommand",
+  "devDependencies": {
+    "chai": "^2.3.0"
+  }
+}
