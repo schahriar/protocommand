@@ -47,7 +47,7 @@ describe('Test Suite', function(){
     describe('MAKE TESTS', function(){
         it('should create correct commmands', function(){
             pcmd.size = 4;
-            expect(pcmd.make('TEST', 'THIS', 'THAT')).to.equal('TEST|THIS|THAT');
+            expect(pcmd.make('TEST', 'THIS', 'THAT').toString('utf8')).to.equal('TEST|THIS|THAT');
         })
         it('should deny based on size', function(){
             expect(pcmd.make('TES')).to.be.false;

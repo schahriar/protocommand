@@ -1,6 +1,6 @@
 {
   "name": "protocommand",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A NodeJS module for parsing protocol commands from a Buffer.",
   "main": "protocommand.js",
   "scripts": {

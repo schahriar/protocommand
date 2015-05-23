@@ -34,7 +34,7 @@ var protoCommand = {
         if(command.length !== this.size) return false;
 
         try {
-            return command.toString() + this.next + Array.prototype.slice.apply(arguments).slice(1).join(this.next);
+            return new Buffer(command.toString() + this.next + Array.prototype.slice.apply(arguments).slice(1).join(this.next), 'utf8');
         }catch(e) {
             // Since we are dealing with protocols we don't want any Throws
             return false;
